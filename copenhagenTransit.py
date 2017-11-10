@@ -18,12 +18,22 @@ def computeFare(zone, ticketType):
      
      fare = 0
      
-     ###################################
-     ### FILL IN YOUR CODE HERE      ###
-     ### Other than your name above, ###
-     ### this is the only section    ###
-     ### you change in this program. ###
-     ###################################
+     if ticketType == "adult":
+         if zone <= 2:
+           fare = 23
+         elif zone == 3:
+            fare = 34.5
+         elif zone == 4:
+            fare = 46
+         else:
+            fare = -1
+      elif ticketType == "child"
+         if zone <= 2:
+            fare = 11
+         elif zone == 3 or 4:
+               fare = 23
+         else:
+               fare = -1
 
      return(fare)
 
