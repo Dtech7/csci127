@@ -27,9 +27,9 @@ def computeFare(zone, ticketType):
             fare = 46
          else:
             fare = -1
-      elif ticketType == "child"
+     elif ticketType == "child"
          if zone <= 2:
-            fare = 11
+            fare = 11.5
          elif zone == 3 or 4:
                fare = 23
          else:
