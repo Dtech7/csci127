@@ -16,28 +16,18 @@ def computeFare(zone, ticketType):
      If the zone is 4 and the ticket type is "adult", the fare is 46.
      If the zone is greater than 4, return a negative number (since your calculator does not handle inputs that high).
      """
-     
      fare = 0
      if ticketType == "adult":
-        if zone <= 2:
-            fare = 23
-        elif zone == 3:
-            fare = 34.5
-        elif zone == 4:
-            fare = 46
-        else:
-            fare = -1
-            
-     elif ticketType == "child":
-        if zone <= 2:
-            fare = 11.5
-        elif zone == 3 or 4:
-            fare = 23
-        else:
-            fare = -1
+         if zone <= 2:
+             fare = 23
+         elif zone == 3:
+             fare = 34.5
+         elif zone == 4:
+             fare = 46
+         else:
+             fare = -1
 
      return(fare)
-
 def main():
      z = int(input('Enter the number of zones: '))
      t = input('Enter the ticket type (adult/child): ').lower()

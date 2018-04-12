@@ -1,0 +1,11 @@
+#Name: Neil Felix
+#Date: November 2017
+#Info:
+
+ADDI $s0, $zero, 1 #set s0 as 1
+ADDI $s1, $zero, 10 #set to end loop
+ADDI $s2, $zero, 1 #set to increment s0
+LOOP: ADD $s0, $s0, $s2
+BEQ $s0, $s1, DONE
+J LOOP
+DONE:

@@ -1,0 +1,9 @@
+#Name: Neil Felix
+#Date: 10/17
+#info:
+
+mkdir projectFiles
+cd projectFiles
+mkdir source
+mkdir data
+mkdir results
